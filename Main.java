@@ -1,26 +1,33 @@
 public class Main {
 
 	public static void main(String[] args) {
-		MyList<String> ml = new MyList<String>();
-		ml.addLast("sdfds");
-		ml.add("toto");
-		ml.add("titi");
-		ml.add("tata");
-		ml.add("toutout", 1);
-		ml.addLast("toutouteefsdf");
-		System.out.println(ml);
-		System.out.println(ml.size());
+		MyList<String> myList = new MyList<String>();
 		
-		MyList<Object> l = new MyList<Object>();
-		l.addLast(1);
-		l.add("toto");
-		l.add("titi");
-		l.addLast("bla");
-		l.addLast(true);
-		l.add("doh");
-		System.out.println(l);
-		System.out.println(l.get(0));
-		System.out.println(l.get(1));
-		System.out.println(l.get(2));
+		myList.addLast("hello");
+		myList.add("toto");
+		myList.add("titi");
+		myList.add("tata");
+		myList.add("test", 1);
+		
+		myList.addLast("world");
+		
+		System.out.println(myList);
+		System.out.println(myList.size());
+		
+		MyList<Object> myList2 = new MyList<Object>();
+		
+		myList2.addLast(1);
+		myList2.add("chems");
+		myList2.add("titi");
+		myList2.addLast("toto");
+		
+		myList2.addLast(true);
+		
+		myList2.add("go");
+		
+		System.out.println(myList2);
+		System.out.println(myList2.get(0));
+		System.out.println(myList2.get(1));
+		System.out.println(myList2.get(2));
 	}
 }
